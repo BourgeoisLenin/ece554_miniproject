@@ -18,14 +18,16 @@ module fifo
   integer i;
   integer x;
 
-
-  always@(posedge clk,rst_n) begin
+  always@(rst_n) begin
     if (!rst_n)
       for ( x= 0; x<DEPTH; x=x+1 ) begin
         fifo_out[x] <= 64'd0;
       end
+  end
 
-    else if (en) begin
+  always@(posedge clk) begin
+
+    if (en) begin
       fifo_out[0][BITS-1:0] <= d;    
       for ( i= 1; i<DEPTH; i=i+1 ) begin
         fifo_out[i][BITS-1:0] <= fifo_out[i-1][BITS-1:0];
