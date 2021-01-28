@@ -71,6 +71,14 @@ module afu
    t_ccip_c0_ReqMmioHdr mmio_hdr;
    assign mmio_hdr = t_ccip_c0_ReqMmioHdr'(rx.c0.hdr);
 
+  logic [63:0] fifo_in;
+  logic [63:0] fifo_out;
+  fifo f0(
+  .clk(clk),rst_n(!rst),
+  .en(rx.c0.mmioWrValid&&mmio_hdr.address==16'h0020),
+  .d(user_reg),
+  .q(fifo_out));
+
    // =============================================================//   
    // MMIO write code
    // =============================================================// 		    
@@ -161,7 +169,7 @@ module afu
 		    // =============================================================   
 		    
                     // Provide the 64-bit data from the user register mapped to h0020.
-                    16'h0020: tx.c2.data <= user_reg;
+                    16'h0020: tx.c2.data <= fifo_out;
 
 		    // If the processor requests an address that is unused, return 0.
                     default:  tx.c2.data <= 64'h0;
