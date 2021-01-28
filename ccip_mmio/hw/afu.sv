@@ -74,7 +74,7 @@ module afu
   logic [63:0] fifo_in;
   logic [63:0] fifo_out;
   fifo f0(
-  .clk(clk),rst_n(!rst),
+  .clk(clk),.rst_n(!rst),
   .en(rx.c0.mmioWrValid&&mmio_hdr.address==16'h0020),
   .d(user_reg),
   .q(fifo_out));
