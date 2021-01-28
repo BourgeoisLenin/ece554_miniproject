@@ -54,18 +54,21 @@ int main(int argc, char *argv[]) {
     
     // Test 100 different writes and reads to the user MMIO register.
     unsigned errors = 0;
+    uint64_t a = 0;
     for (uint64_t i=0; i < 100; i++) {
       afu.write(USER_REG_ADDR, i);
       uint64_t result = afu.read(USER_REG_ADDR);
       
-      for ( int pass = 0: pass <8; pass++){
-        afu.read(USER_REG_ADDR);
+
+      if ( a < 8){
+	
+        if (result != i) {
+	  cerr << "ERROR: Read from MMIO register has incorrect value " << result << " instead of " << i << endl;
+	  errors ++;
+        }
+	i--;
       }
-      
-      if (result != i) {
-	cerr << "ERROR: Read from MMIO register has incorrect value " << result << " instead of " << i << endl;
-	errors ++;
-      }
+      a++;
     }
 
     if (errors == 0) {
