@@ -1,0 +1,58 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Modeltech_pe_edu_10.4a/examples
+vtpumac
+Z0 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+!s110 1612262091
+!i10b 1
+!s100 LVBl5:b=Ilb@fVnomMN6M2
+I<583mcCDXWB@n4lU>?74J1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+!s105 tpumac_sv_unit
+S1
+Z2 dC:/Users/Gungn/Desktop/ece554_miniproject/minilab2
+w1612262085
+8C:/Users/Gungn/Desktop/ece554_miniproject/minilab2/tpumac.sv
+FC:/Users/Gungn/Desktop/ece554_miniproject/minilab2/tpumac.sv
+L0 2
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+!s108 1612262091.000000
+!s107 C:/Users/Gungn/Desktop/ece554_miniproject/minilab2/tpumac.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Gungn/Desktop/ece554_miniproject/minilab2/tpumac.sv|
+!s101 -O0
+!i113 1
+Z4 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vtpumac_tb
+R0
+!s110 1612262686
+!i10b 1
+!s100 kEV@aE7zZn2V10eOCOV603
+I5iTcGQ>`GI^HSnO9bcg:72
+R1
+!s105 tpumac_tb_sv_unit
+S1
+R2
+w1612262680
+8C:\Users\Gungn\Desktop\ece554_miniproject\minilab2\tpumac_tb.sv
+FC:\Users\Gungn\Desktop\ece554_miniproject\minilab2\tpumac_tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1612262686.000000
+!s107 C:\Users\Gungn\Desktop\ece554_miniproject\minilab2\tpumac_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:\Users\Gungn\Desktop\ece554_miniproject\minilab2\tpumac_tb.sv|
+!s101 -O0
+!i113 1
+R4
