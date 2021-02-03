@@ -99,6 +99,72 @@ module tpumac_tb();
 			$display("ARRRR!  Ye codes be blast! Aye, there be errors. Get debugging!");
 		end
 
+        #5
+        en = 1'b1;
+        WrEn = 1'b1;
+        Cin = 16'd 2;
+        #5
+        #1 if(Cout !== 2'd2) begin
+				$display("Error! WrEn test failed. Expected: %d, Got: %d", 2,Cout); 
+			end
+        else 
+            $display("YAHOO!!! WrEn tests passed.");
+
+        A[0] = $random;
+        A[1] = $random;
+        A[2] = $random;
+        A[3] = $random;
+        A[4] = $random;
+        A[5] = $random;
+        A[6] = $random;
+        A[7] = $random;
+
+        B[0] = $random;
+        B[1] = $random;
+        B[2] = $random;
+        B[3] = $random;
+        B[4] = $random;
+        B[5] = $random;
+        B[6] = $random;
+        B[7] = $random;
+
+        Cinter[0] = 16'd 0;
+        Cinter[1] = A[0]*B[0]+Cinter[0];
+        Cinter[2] = A[1]*B[1]+Cinter[1];
+        Cinter[3] = A[2]*B[2]+Cinter[2];
+        Cinter[4] = A[3]*B[3]+Cinter[3];
+        Cinter[5] = A[4]*B[4]+Cinter[4];
+        Cinter[6] = A[5]*B[5]+Cinter[5];
+        Cinter[7] = A[6]*B[6]+Cinter[6];
+        Cinter[8] = A[7]*B[7]+Cinter[7];
+
+        rst_n = 1'b0;
+        Cin = 16'd 0;
+        #5
+        rst_n = 1'b1;
+		en = 1'b1;
+        WrEn = 1'b0;
+        
+		for(lind = 0; lind < 9; ++lind) begin
+			Ain = A[lind];
+            Bin = B[lind];
+
+			// We should also check for the reset during each of
+			// these
+			#1 if(Cout !== Cinter[lind]) begin
+				errors++;
+				$display("Error! Reset was not conducted properly. Expected: %d, Got: %d", Cinter[lind],Cout); 
+			end
+
+			@(posedge clk);
+		end
+
+		if(!errors) begin
+			$display("YAHOO!!! All random tests passed.");
+		end
+		else begin
+			$display("ARRRR!  Ye codes be blast! Aye, there be errors. Get debugging!");
+		end
 		$stop;
 
 	end
