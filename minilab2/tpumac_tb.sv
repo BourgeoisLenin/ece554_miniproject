@@ -75,6 +75,7 @@ module tpumac_tb();
 		// Load stimulti for our DUT
 		@(posedge clk);
 		rst_n = 1'b1;
+
 		en = 1'b1;
         WrEn = 1'b0;
         
@@ -165,6 +166,29 @@ module tpumac_tb();
 		else begin
 			$display("ARRRR!  Ye codes be blast! Aye, there be errors. Get debugging!");
 		end
+
+
+        en = 1'b0;
+        Ain = 1'b1;
+        Bin = 1'b1;
+        Cin =1'b1;
+        #5
+        #5
+        	#1 if(Cout !== Cinter[8]) begin
+				errors++;
+				$display("Error! En error. Expected: %d, Got: %d", Cinter[8],Cout); 
+			end
+            
+        WrEn = 1'b1;
+        Ain = 1'b1;
+        Bin = 1'b1;
+        Cin =1'b1;
+        #5
+        #5
+        	#1 if(Cout !== Cinter[8]) begin
+				errors++;
+				$display("Error! En=0 WrEn=1 error. Expected: %d, Got: %d", Cinter[8],Cout); 
+			end
 		$stop;
 
 	end

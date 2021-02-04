@@ -1,4 +1,11 @@
-C:/Users/Gungn/Desktop/ece554_miniproject/minilab2/tpumac.sv {1 {vlog -work work -sv -stats=none C:/Users/Gungn/Desktop/ece554_miniproject/minilab2/tpumac.sv
+C:/Users/Gungn/Desktop/ece554_miniproject/minilab2/tpumac_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/Gungn/Desktop/ece554_miniproject/minilab2/tpumac_tb.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module tpumac_tb
+
+Top level modules:
+	tpumac_tb
+
+} {} {}} C:/Users/Gungn/Desktop/ece554_miniproject/minilab2/tpumac.sv {1 {vlog -work work -sv -stats=none C:/Users/Gungn/Desktop/ece554_miniproject/minilab2/tpumac.sv
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module tpumac
 

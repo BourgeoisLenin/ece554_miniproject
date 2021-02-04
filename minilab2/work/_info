@@ -34,15 +34,15 @@ r1
 Z4 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
 vtpumac_tb
 R0
-!s110 1612315956
+!s110 1612318710
 !i10b 1
-!s100 b9oaT[`5Emk2z@iXRClIH2
-I9V^]@d5>Vo2LKzCV58W021
+!s100 1X;XAKHB@G8b5Bga?RI>[2
+IURUnH>3@eZCYzZTZF715?2
 R1
 !s105 tpumac_tb_sv_unit
 S1
 R2
-w1612315950
+w1612318706
 8C:/Users/Gungn/Desktop/ece554_miniproject/minilab2/tpumac_tb.sv
 FC:/Users/Gungn/Desktop/ece554_miniproject/minilab2/tpumac_tb.sv
 L0 3
@@ -50,7 +50,7 @@ R3
 r1
 !s85 0
 31
-!s108 1612315956.000000
+!s108 1612318710.000000
 !s107 C:/Users/Gungn/Desktop/ece554_miniproject/minilab2/tpumac_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Gungn/Desktop/ece554_miniproject/minilab2/tpumac_tb.sv|
 !s101 -O0
