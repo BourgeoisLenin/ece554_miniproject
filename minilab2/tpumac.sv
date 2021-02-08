@@ -31,9 +31,10 @@ module tpumac
             Cout <= 0;
         end
         else if(WrEn)
-            Cout <= Cin;
-        else if (en)
+                Cout <= Cin;
+        else if (en) begin
             Cout <= add;
+        end
     end
     
     always_comb begin
