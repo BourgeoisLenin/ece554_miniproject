@@ -12,37 +12,35 @@ module tpumac
    output reg signed [BITS_C-1:0] Cout
   );
 
-  logic [BITS_C-1:0] mult;
-  logic [BITS_C-1:0] add;
-  logic [BITS_C-1:0] Csel;
-
-  
-        assign mult = Ain*Bin;
-        assign add = mult+Cout;
-        assign Csel = WrEn?Cin:add;
+  logic signed [BITS_C-1:0] mult;
+  logic signed [BITS_C-1:0] add;
 
     always_ff@(posedge clk, negedge rst_n) begin
         if(!rst_n)begin
             Aout <= 0;
             Bout <= 0;
-            Cout <= 0;
         end
-        //mult <= Ain*Bin;
-        //add <= mult+Cout;
-        /*
-        if(WrEn)
-            Csel <= Cin;
-        else 
-            Csel <= add;
-            */
-
-        if(en)begin
+        else if(en)begin
             Aout <= Ain;
             Bout <= Bin;
-            Cout <= Csel;
         end
-
     end
+
+    always_ff@(posedge clk, negedge rst_n) begin
+        if(!rst_n)begin
+            Cout <= 0;
+        end
+        else if(WrEn)
+            Cout <= Cin;
+        else if (en)
+            Cout <= add;
+    end
+    
+    always_comb begin
+        mult = Ain * Bin;
+        add =  mult + Cout;
+    end
+
 endmodule
 
 // NOTE: added register enable in v1.1
