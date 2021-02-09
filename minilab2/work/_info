@@ -34,15 +34,15 @@ Z5 !s108 1612905450.000000
 Z6 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
 vfifo_transpose
 R0
-!s110 1612905544
+Z7 !s110 1612907336
 !i10b 1
-!s100 @@b?HO_No:LTXNRjkGIG:0
-IQhSIO;lSgJB]Vz3KXKm4E2
+!s100 Q:aj^jbl=Ul[M9>nHT6Dz3
+II?O@H:L[EU<fjJ2RcBDlf1
 R2
 !s105 fifo_transpose_sv_unit
 S1
 R3
-w1612905542
+w1612906565
 8C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/fifo_transpose.sv
 FC:/Users/Gungn/Desktop/ece554_miniproject/minilab4/fifo_transpose.sv
 L0 2
@@ -50,12 +50,37 @@ R4
 r1
 !s85 0
 31
-!s108 1612905544.000000
+Z8 !s108 1612907336.000000
 !s107 C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/fifo_transpose.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/fifo_transpose.sv|
 !s101 -O0
 !i113 1
 R6
+vmemA
+R0
+R7
+!i10b 1
+!s100 klb]_l2V_U?HUCgWCXaWf0
+II7MiGHah666CbDao:OB?m3
+R2
+!s105 memA_sv_unit
+S1
+R3
+w1612907326
+8C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/memA.sv
+FC:/Users/Gungn/Desktop/ece554_miniproject/minilab4/memA.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/memA.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/memA.sv|
+!s101 -O0
+!i113 1
+R6
+nmem@a
 vmemB
 R0
 !s110 1612906285
@@ -83,7 +108,7 @@ R6
 nmem@b
 vsystolic_array
 R0
-Z7 !s110 1612905451
+Z9 !s110 1612905451
 !i10b 1
 !s100 ghBLGIKaI6KPzQD=h_8:m0
 IfzG?O3PjH^A^AR=oLM8ZG1
@@ -99,7 +124,7 @@ R4
 r1
 !s85 0
 31
-Z8 !s108 1612905451.000000
+Z10 !s108 1612905451.000000
 !s107 C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/systolic_array.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/systolic_array.sv|
 !s101 -O0
@@ -119,13 +144,13 @@ INmmDDhm7V8cB7VWUM0kHR3
 S1
 R3
 w1612411587
-Z9 8C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/systolic_array_tb.sv
-Z10 FC:/Users/Gungn/Desktop/ece554_miniproject/minilab4/systolic_array_tb.sv
+Z11 8C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/systolic_array_tb.sv
+Z12 FC:/Users/Gungn/Desktop/ece554_miniproject/minilab4/systolic_array_tb.sv
 L0 5
 R4
-R8
-Z11 !s107 C:\Users\Gungn\Desktop\ece554_miniproject\minilab4\systolic_array_tc.svh|C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/systolic_array_tb.sv|
-Z12 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/systolic_array_tb.sv|
+R10
+Z13 !s107 C:\Users\Gungn\Desktop\ece554_miniproject\minilab4\systolic_array_tc.svh|C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/systolic_array_tb.sv|
+Z14 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/systolic_array_tb.sv|
 !s101 -O0
 !i113 1
 R6
@@ -141,21 +166,21 @@ IGAO=5dWcYDM4bL3]KHF711
 !i103 1
 S1
 R3
-Z13 w1612411590
-R9
-R10
+Z15 w1612411590
+R11
+R12
 FC:\Users\Gungn\Desktop\ece554_miniproject\minilab4\systolic_array_tc.svh
 L0 3
 R4
-R8
-R11
-R12
+R10
+R13
+R14
 !s101 -O0
 !i113 1
 R6
 Xsystolic_array_tc_svh_unit
 R0
-R7
+R9
 !i10b 1
 !s100 azE3XfS`@ALH_ob;ajET81
 IUecHWH4]9oQ`mSGU@03Gd3
@@ -163,7 +188,7 @@ VUecHWH4]9oQ`mSGU@03Gd3
 !i103 1
 S1
 R3
-R13
+R15
 8C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/systolic_array_tc.svh
 FC:/Users/Gungn/Desktop/ece554_miniproject/minilab4/systolic_array_tc.svh
 L0 3
@@ -171,7 +196,7 @@ R4
 r1
 !s85 0
 31
-R8
+R10
 !s107 C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/systolic_array_tc.svh|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/systolic_array_tc.svh|
 !s101 -O0
