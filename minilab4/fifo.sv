@@ -6,29 +6,23 @@
 module fifo
   #(
   parameter DEPTH=8,
-  parameter BITS=64
+  parameter BITS=8
   )
   (
   input clk,rst_n,en,
   input [BITS-1:0] d,
   output [BITS-1:0] q
   );
+  
   // your RTL code here
   reg [BITS-1:0] fifo_out [DEPTH-1:0];
   integer i;
   integer x;
-/*
-  always@(rst_n) begin
-    if (!rst_n)
-      for ( x= 0; x<DEPTH; x=x+1 ) begin
-        fifo_out[x] <= 64'd0;
-      end
-  end
-*/
+
   always@(posedge clk) begin
     if (!rst_n)
       for ( x= 0; x<DEPTH; x=x+1 ) begin
-        fifo_out[x] <= 64'd0;
+        fifo_out[x] <= 0;
       end
 
     else if (en) begin

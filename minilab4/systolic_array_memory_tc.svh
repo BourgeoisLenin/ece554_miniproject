@@ -1,1 +1,0 @@
-class systolic_array_memory_tc extends systolic_array_tc;

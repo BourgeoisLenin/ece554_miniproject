@@ -2,7 +2,7 @@
 module fifo_transpose
   #(
   parameter DEPTH=8,
-  parameter BITS=64
+  parameter BITS=8
   )
   (
   input clk,rst_n,en, WrEn,

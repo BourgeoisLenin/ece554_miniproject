@@ -1,0 +1,276 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Modeltech_pe_edu_10.4a/examples
+vfifo
+Z0 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+!s110 1612912448
+!i10b 1
+!s100 Faj<gZLb@2::mYb=kXnJ?3
+Ih6:7lNOR[g0TeMYVoRoe23
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+!s105 fifo_sv_unit
+S1
+Z2 dC:/Users/Gungn/Desktop/ece554_miniproject/minilab4
+w1612912418
+8C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/fifo.sv
+FC:/Users/Gungn/Desktop/ece554_miniproject/minilab4/fifo.sv
+L0 6
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+!s108 1612912448.000000
+!s107 C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/fifo.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/fifo.sv|
+!s101 -O0
+!i113 1
+Z4 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vfifo_transpose
+R0
+!s110 1612911421
+!i10b 1
+!s100 Jc4B^c<a8@QH@gaKVP@a;0
+IT0UkOD7zBBK1IH7i`KG0b1
+R1
+!s105 fifo_transpose_sv_unit
+S1
+R2
+w1612911412
+8C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/fifo_transpose.sv
+FC:/Users/Gungn/Desktop/ece554_miniproject/minilab4/fifo_transpose.sv
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1612911421.000000
+!s107 C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/fifo_transpose.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/fifo_transpose.sv|
+!s101 -O0
+!i113 1
+R4
+vmem_tb
+R0
+!s110 1612913661
+!i10b 1
+!s100 Qm_IdV7457R62:nEmm3TV3
+I;F2lh`Y4^=D:RI9^Ti>lT2
+R1
+!s105 mem_tb_sv_unit
+S1
+R2
+w1612913653
+8C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/mem_tb.sv
+FC:/Users/Gungn/Desktop/ece554_miniproject/minilab4/mem_tb.sv
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1612913661.000000
+!s107 C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/mem_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/mem_tb.sv|
+!s101 -O0
+!i113 1
+R4
+vmemA
+R0
+!s110 1612910622
+!i10b 1
+!s100 klb]_l2V_U?HUCgWCXaWf0
+II7MiGHah666CbDao:OB?m3
+R1
+!s105 memA_sv_unit
+S1
+R2
+w1612909636
+8C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/memA.sv
+FC:/Users/Gungn/Desktop/ece554_miniproject/minilab4/memA.sv
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1612910622.000000
+!s107 C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/memA.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/memA.sv|
+!s101 -O0
+!i113 1
+R4
+nmem@a
+vmemB
+R0
+!s110 1612913865
+!i10b 1
+!s100 Ug4GbNTJ6R]AB2I8[39TY0
+I_JYBegdZa3c3j0DFWmNjf1
+R1
+!s105 memB_sv_unit
+S1
+R2
+w1612913862
+8C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/memB.sv
+FC:/Users/Gungn/Desktop/ece554_miniproject/minilab4/memB.sv
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1612913865.000000
+!s107 C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/memB.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/memB.sv|
+!s101 -O0
+!i113 1
+R4
+nmem@b
+vmydff
+R0
+!s110 1612912185
+!i10b 1
+!s100 VKVfaJEOG]j]WBGekzUz63
+I_neAdDo2Sg8bEz@ZUg<e00
+R1
+!s105 mydff_sv_unit
+S1
+R2
+w1611833092
+8C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/mydff.sv
+FC:/Users/Gungn/Desktop/ece554_miniproject/minilab4/mydff.sv
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1612912185.000000
+!s107 C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/mydff.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/mydff.sv|
+!s101 -O0
+!i113 1
+R4
+vsystolic_array
+R0
+Z5 !s110 1612908730
+!i10b 1
+!s100 ghBLGIKaI6KPzQD=h_8:m0
+IfzG?O3PjH^A^AR=oLM8ZG1
+R1
+!s105 systolic_array_sv_unit
+S1
+R2
+w1612822554
+8C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/systolic_array.sv
+FC:/Users/Gungn/Desktop/ece554_miniproject/minilab4/systolic_array.sv
+L0 1
+R3
+r1
+!s85 0
+31
+Z6 !s108 1612908730.000000
+!s107 C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/systolic_array.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/systolic_array.sv|
+!s101 -O0
+!i113 1
+R4
+vsystolic_array_tb
+R0
+DXx4 work 25 systolic_array_tb_sv_unit 0 22 eA7HF94MS1h2GzQ`>2<C22
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 10;?o1A>a[[C3dLj3PVG=2
+INmmDDhm7V8cB7VWUM0kHR3
+!s105 systolic_array_tb_sv_unit
+S1
+R2
+w1612411587
+Z7 8C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/systolic_array_tb.sv
+Z8 FC:/Users/Gungn/Desktop/ece554_miniproject/minilab4/systolic_array_tb.sv
+L0 5
+R3
+R6
+Z9 !s107 systolic_array_tc.svh|C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/systolic_array_tb.sv|
+Z10 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/systolic_array_tb.sv|
+!s101 -O0
+!i113 1
+R4
+Xsystolic_array_tb_sv_unit
+R0
+VeA7HF94MS1h2GzQ`>2<C22
+r1
+!s85 0
+31
+!i10b 1
+!s100 J1E=^nTml:^J8?ojHCzgY1
+IeA7HF94MS1h2GzQ`>2<C22
+!i103 1
+S1
+R2
+Z11 w1612411590
+R7
+R8
+Fsystolic_array_tc.svh
+L0 3
+R3
+R6
+R9
+R10
+!s101 -O0
+!i113 1
+R4
+Xsystolic_array_tc_svh_unit
+R0
+!s110 1612908731
+!i10b 1
+!s100 azE3XfS`@ALH_ob;ajET81
+IUecHWH4]9oQ`mSGU@03Gd3
+VUecHWH4]9oQ`mSGU@03Gd3
+!i103 1
+S1
+R2
+R11
+8C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/systolic_array_tc.svh
+FC:/Users/Gungn/Desktop/ece554_miniproject/minilab4/systolic_array_tc.svh
+L0 3
+R3
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/systolic_array_tc.svh|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/systolic_array_tc.svh|
+!s101 -O0
+!i113 1
+R4
+vtpumac
+R0
+R5
+!i10b 1
+!s100 NM1=CllK;]9=mE_8zc>VL1
+In6MdZ^jYHc@=k26_^4NZ_0
+R1
+!s105 tpumac_sv_unit
+S1
+R2
+w1612885096
+8C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/tpumac.sv
+FC:/Users/Gungn/Desktop/ece554_miniproject/minilab4/tpumac.sv
+L0 2
+R3
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/tpumac.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/tpumac.sv|
+!s101 -O0
+!i113 1
+R4
