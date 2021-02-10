@@ -10,6 +10,7 @@ module fifo
   )
   (
   input clk,rst_n,en,
+  input stall,
   input [BITS-1:0] d,
   output [BITS-1:0] q
   );
@@ -21,20 +22,18 @@ module fifo
 
   always@(posedge clk) begin
     if (!rst_n)
-      for ( x= 0; x<DEPTH; x=x+1 ) begin
+      for ( x= 0; x<DEPTH; x++ ) begin
         fifo_out[x] <= 0;
       end
-
-    else if (en) begin
-      fifo_out[0][BITS-1:0] <= d;    
-      for ( i= 1; i<DEPTH; i=i+1 ) begin
+    else if (en&&!stall) begin  
+      fifo_out[0][BITS-1:0] <= d;
+      for ( i= 1; i<DEPTH; i++ ) begin
         fifo_out[i][BITS-1:0] <= fifo_out[i-1][BITS-1:0];
-      end
-    
+      end  
     end
 
   end
 
-  assign q =fifo_out[DEPTH-1];
+  assign q = stall?0:fifo_out[DEPTH-1];
 
 endmodule // fifo

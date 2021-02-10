@@ -1,3 +1,5 @@
+// My testbenching skill still needs some improvement. I am not confident enough to write
+// an automatic test bench. But I try to do it next time and chagne this one into automatic in my leisure.
 module mem_tb();
     localparam BITS_AB=8;
     localparam DIM=8;
@@ -14,13 +16,13 @@ module mem_tb();
     always #5 clk = ~clk; 
 
     memB DUT (.clk(clk),.rst_n(rst_n),.en(en),.Bin(Bin),.Bout(Bout));
-    //memA DUT1 (.clk(clk),.rst_n(rst_n),.en(en),.WrEn(WrEn),.Ain(Ain),.Arow(Arow),.Aout(Aout));
+    memA DUT1 (.clk(clk),.rst_n(rst_n),.en(en),.WrEn(WrEn),.Ain(Ain),.Arow(Arow),.Aout(Aout));
 
     logic signed [BITS_AB-1:0] A [DIM-1:0][DIM-1:0];
     logic signed [BITS_AB-1:0] B [DIM-1:0][DIM-1:0];
     integer error;
     integer Row,Col;
-
+    integer a;
 
     initial begin
         for(Row=0;Row<DIM;Row++) begin
@@ -42,28 +44,92 @@ module mem_tb();
 
         @(posedge clk) begin end
             en = 1'd1;
-            Bin = B[0];         
+        for(a=0;a<DIM;a++)begin
+            Bin = B[a];
+            @(posedge clk)begin end
+            
+        end
+            Arow = 3'h0;
+            WrEn = 1'd1;
+            Ain = A[0];
+        @(posedge clk) begin end
+            Arow = 3'h1;
+            WrEn = 1'd1;
+            Ain = A[1];
+        @(posedge clk) begin end/*
+            Bin[0] = 0;
+            Bin[1] = 0;
+            Bin[2] = 0;
+            Bin[3] = 0;
+            Bin[4] = 0;
+            Bin[5] = 0;
+            Bin[6] = 0;
+            Bin[7] = 0;*/
+            Arow = 3'h2;
+            WrEn = 1'd1;
+            Ain = A[2];
+        @(posedge clk) begin end
+      
+            Arow = 3'h3;
+            WrEn = 1'd1;
+            Ain = A[3];
+        @(posedge clk) begin end
+         
+            Arow = 3'h4;
+            WrEn = 1'd1;
+            Ain = A[4];
+        @(posedge clk) begin end
+          
+            Arow = 3'h5;
+            WrEn = 1'd1;
+            Ain = A[5];
+        @(posedge clk) begin end
+     
+            Arow = 3'h6;
+            WrEn = 1'd1;
+            Ain = A[6];
+        @(posedge clk) begin end
+
+            Arow = 3'h7;
+            WrEn = 1'd1;
+            Ain = A[7];  
+        @(posedge clk) begin end
+            WrEn = 1'd0;
+
+            Arow = 3'h0;
+            WrEn = 1'd1;
+            Ain = {0,0,0,0,0,0,0,0};    
+        @(posedge clk) begin end
+            Arow = 3'h1;
+            WrEn = 1'd1;
+            Ain = {0,0,0,0,0,0,0,0}; 
+        @(posedge clk) begin end
+            Arow = 3'h2;
+            WrEn = 1'd1;
+            Ain = {0,0,0,0,0,0,0,0}; 
+        @(posedge clk) begin end
+            Arow = 3'h3;
+            WrEn = 1'd1;
+            Ain = {0,0,0,0,0,0,0,0};   
+        @(posedge clk) begin end    
+            Arow = 3'h4;
+            WrEn = 1'd1;
+            Ain = {0,0,0,0,0,0,0,0};  
 
         @(posedge clk) begin end
-            Bin = B[1];         
-
+            Arow = 3'h5;
+            WrEn = 1'd1;
+            Ain = {0,0,0,0,0,0,0,0};  
         @(posedge clk) begin end
-            Bin = B[2];         
-
+            Arow = 3'h6;
+            WrEn = 1'd1;
+            Ain = {0,0,0,0,0,0,0,0}; 
         @(posedge clk) begin end
-            Bin = B[3];         
-
+            Arow = 3'h7;
+            WrEn = 1'd1;
+            Ain = {0,0,0,0,0,0,0,0};   
         @(posedge clk) begin end
-            Bin = B[4];         
-
-        @(posedge clk) begin end
-            Bin = B[5];         
-
-        @(posedge clk) begin end
-            Bin = B[6];         
-
-        @(posedge clk) begin end
-            Bin = B[7];     
+            WrEn = 1'd0;
         @(posedge clk) begin end
         @(posedge clk) begin end
         @(posedge clk) begin end
@@ -72,14 +138,7 @@ module mem_tb();
         @(posedge clk) begin end
         @(posedge clk) begin end
         @(posedge clk) begin end
-        @(posedge clk) begin end
-        @(posedge clk) begin end
-        @(posedge clk) begin end
-        @(posedge clk) begin end
-        @(posedge clk) begin end
-        @(posedge clk) begin end
-        @(posedge clk) begin end
-        @(posedge clk) begin end
+        en = 1'b0;
 
         $stop;
 

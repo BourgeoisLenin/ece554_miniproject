@@ -1,5 +1,5 @@
 
-module fifo_transpose
+module transpose_fifo
   #(
   parameter DEPTH=8,
   parameter BITS=8
@@ -7,6 +7,7 @@ module fifo_transpose
   (
   input clk,rst_n,en, WrEn,
   input  [BITS-1:0] d [DEPTH-1:0],
+  input stall,
   output [BITS-1:0] q
   );
   // your RTL code here
@@ -29,8 +30,7 @@ module fifo_transpose
     else if (WrEn) begin
         fifo_out <= d;
     end
-    else if (en) begin
-      fifo_out[DEPTH-1][BITS-1:0] <= 0;    
+    else if (en&&!stall) begin
       for ( i= 0; i<DEPTH-1; i=i+1 ) begin
         fifo_out[i][BITS-1:0] <= fifo_out[i+1][BITS-1:0];
       end
@@ -39,6 +39,6 @@ module fifo_transpose
 
   end
 
-  assign q =fifo_out[0];
+  assign q =stall?0:fifo_out[0];
 
 endmodule // fifo_transpose

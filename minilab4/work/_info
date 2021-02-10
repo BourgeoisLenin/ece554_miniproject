@@ -10,15 +10,15 @@ cModel Technology
 dC:/Modeltech_pe_edu_10.4a/examples
 vfifo
 Z0 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
-!s110 1612912448
+!s110 1612918528
 !i10b 1
-!s100 Faj<gZLb@2::mYb=kXnJ?3
-Ih6:7lNOR[g0TeMYVoRoe23
+!s100 dRDhO[cQe8P1WLRO;GSbS0
+IHj[db24k:TnWYlEBh^CfC3
 Z1 VDg1SIo80bB@j0V0VzS_@n1
 !s105 fifo_sv_unit
 S1
 Z2 dC:/Users/Gungn/Desktop/ece554_miniproject/minilab4
-w1612912418
+w1612918513
 8C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/fifo.sv
 FC:/Users/Gungn/Desktop/ece554_miniproject/minilab4/fifo.sv
 L0 6
@@ -26,7 +26,7 @@ Z3 OP;L;10.4a;61
 r1
 !s85 0
 31
-!s108 1612912448.000000
+!s108 1612918528.000000
 !s107 C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/fifo.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/fifo.sv|
 !s101 -O0
@@ -34,15 +34,15 @@ r1
 Z4 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
 vfifo_transpose
 R0
-!s110 1612911421
+!s110 1612922045
 !i10b 1
-!s100 Jc4B^c<a8@QH@gaKVP@a;0
-IT0UkOD7zBBK1IH7i`KG0b1
+!s100 @AR4RjGM^39Y4j`aR0>PA1
+I?Ff@SK:<XE3MVPaPFOL601
 R1
 !s105 fifo_transpose_sv_unit
 S1
 R2
-w1612911412
+w1612922042
 8C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/fifo_transpose.sv
 FC:/Users/Gungn/Desktop/ece554_miniproject/minilab4/fifo_transpose.sv
 L0 2
@@ -50,7 +50,7 @@ R3
 r1
 !s85 0
 31
-!s108 1612911421.000000
+!s108 1612922045.000000
 !s107 C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/fifo_transpose.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/fifo_transpose.sv|
 !s101 -O0
@@ -58,23 +58,23 @@ r1
 R4
 vmem_tb
 R0
-!s110 1612913661
+!s110 1612926701
 !i10b 1
-!s100 Qm_IdV7457R62:nEmm3TV3
-I;F2lh`Y4^=D:RI9^Ti>lT2
+!s100 R^01V7J4lCFUlXRDWTc@J0
+IZz]ASY=Co<@cco_6748U72
 R1
 !s105 mem_tb_sv_unit
 S1
 R2
-w1612913653
+w1612926681
 8C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/mem_tb.sv
 FC:/Users/Gungn/Desktop/ece554_miniproject/minilab4/mem_tb.sv
-L0 1
+L0 3
 R3
 r1
 !s85 0
 31
-!s108 1612913661.000000
+!s108 1612926701.000000
 !s107 C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/mem_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/mem_tb.sv|
 !s101 -O0
@@ -82,23 +82,23 @@ r1
 R4
 vmemA
 R0
-!s110 1612910622
+!s110 1612925236
 !i10b 1
-!s100 klb]_l2V_U?HUCgWCXaWf0
-II7MiGHah666CbDao:OB?m3
+!s100 WjOk2@dc>XX5jUN@CSOEW0
+IH`kOM1ZT[KQHBc3C71Loc1
 R1
 !s105 memA_sv_unit
 S1
 R2
-w1612909636
+w1612925152
 8C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/memA.sv
 FC:/Users/Gungn/Desktop/ece554_miniproject/minilab4/memA.sv
-L0 1
+L0 3
 R3
 r1
 !s85 0
 31
-!s108 1612910622.000000
+!s108 1612925236.000000
 !s107 C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/memA.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/memA.sv|
 !s101 -O0
@@ -107,15 +107,15 @@ R4
 nmem@a
 vmemB
 R0
-!s110 1612913865
+!s110 1612920994
 !i10b 1
-!s100 Ug4GbNTJ6R]AB2I8[39TY0
-I_JYBegdZa3c3j0DFWmNjf1
+!s100 ^93@[gM;I8X>^SoC@G^LP0
+I6mRB<l;jMY20HZFBTh0Mh3
 R1
 !s105 memB_sv_unit
 S1
 R2
-w1612913862
+w1612920989
 8C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/memB.sv
 FC:/Users/Gungn/Desktop/ece554_miniproject/minilab4/memB.sv
 L0 1
@@ -123,7 +123,7 @@ R3
 r1
 !s85 0
 31
-!s108 1612913865.000000
+!s108 1612920994.000000
 !s107 C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/memB.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Gungn/Desktop/ece554_miniproject/minilab4/memB.sv|
 !s101 -O0
